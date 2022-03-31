@@ -1,4 +1,8 @@
+import { Fragment } from 'react';
 import Head from 'next/head';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { testReducerActions } from '../store/test-reducer';
 
 const appTitle = 'My project name'; // TODO - Update this
 const appDescription = 'This is the description about my project'; // TODO - Update this
@@ -6,8 +10,15 @@ const baseUrl = 'https://my-url.com'; // TODO - Update this
 const socialMediaImagePath = `${baseUrl}/images/my-image-name.png`; // TODO - Update this
 
 const Home = () => {
+  const dispatch = useDispatch();
+  const testReducerState = useSelector(state => state.testReducer.testReducerState);
+
+  const testClickHandler = () => {
+    dispatch(testReducerActions.setTestReducerState());
+  };
+
   return (
-    <div>
+    <Fragment>
       <Head>
         <title>{appTitle}</title>
         <meta name='description' content={appDescription} />
@@ -30,7 +41,8 @@ const Home = () => {
       </Head>
 
       <div className='text-2xl'>CONTENT GOES HERE</div>
-    </div>
+      <div onClick={testClickHandler}>The test reducer state is {testReducerState.toString()}</div>
+    </Fragment>
   );
 };
 
