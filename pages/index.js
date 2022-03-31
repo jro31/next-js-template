@@ -29,7 +29,7 @@ const Home = () => {
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
 
-      <div>CONTENT GOES HERE</div>
+      <div className='text-2xl'>CONTENT GOES HERE</div>
     </div>
   );
 };

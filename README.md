@@ -4,3 +4,4 @@ A Next.js project template setup with:
 - React 18.0.0
 - Redux Toolkit
 - Tailwind CSS 3
+  - Setup for Tailwind UI
