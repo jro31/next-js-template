@@ -1,3 +1,4 @@
+// TODO - Update the '"name": "next-js-template",' line in 'package.json' to your project name
 // TODO - Update favicon
 
 import { Provider } from 'react-redux';

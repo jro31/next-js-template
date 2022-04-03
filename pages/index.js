@@ -40,7 +40,7 @@ const Home = () => {
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
 
-      <div className='text-2xl'>CONTENT GOES HERE</div>
+      <div className='2xs:text-xl sm:text-2xl'>CONTENT GOES HERE</div>
       <div onClick={testClickHandler}>The test reducer state is {testReducerState.toString()}</div>
     </Fragment>
   );
