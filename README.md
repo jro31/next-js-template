@@ -6,4 +6,4 @@ A Next.js project template setup with:
 - Tailwind CSS 3
   - Setup for Tailwind UI
 
-See [jethro.codes/templates/next-js](https://jethro.codes/templates/next-js) for a more in depth look at this template.
+See [code.jethrowilliams.com/templates/next-js](https://code.jethrowilliams.com/templates/next-js) for a more in depth look at this template.
